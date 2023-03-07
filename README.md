@@ -4,4 +4,4 @@ Based on Peter Knight's Arduino Granular Synth project.
 
  [![Watch the video](https://i.imgur.com/xYwKKR7.png)](https://youtu.be/2OcyxWDMjQo)
  
- ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Granular Synth Theremin Top.png?raw=true)
+ ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Arduino_Granular_Synth_Theremin_bb.png?raw=true)
