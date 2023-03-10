@@ -2,9 +2,23 @@
 An Arduino based projects that utilizes an Arduino Mega 2560 board, 5 10k ohms potentiometers, and 2 IR proximity sensors as inputs.
 Based on Peter Knight's Arduino Granular Synth project.
 
-A granular synthesizer is a type of digital synthesizer that produces complex, textured sounds by dividing sound waves into tiny "grains" and manipulating them individually. 
-
 You can explore a vast range of sound textures and manipulate them in real-time. This project is ideal for anyone interested in exploring the boundaries of sound synthesis, especially musicians, sound designers, and electronic hobbyists. With its intuitive interface and customizable controls, its provides an accessible way to experiment with sound and create unique compositions. Whether you're a seasoned pro or a curious beginner, this granular synthesizer is a great way to push the boundaries of sound synthesis and explore the infinite possibilities of sound.
+
+## Implementing a granular synthesis algorithm on an embedded system with a PWM (pulse width modulation) output for audio.
+
+Granular synthesis involves dividing an audio sample into small, overlapping pieces called grains, and then manipulating those grains in various ways (such as changing their pitch, duration, or amplitude) to create new sounds. 
+
+In this project, each grain oscillator generates a triangular waveform with an exponential decay envelope, and the two oscillators are summed together to create the final output sample.
+
+The phase accumulator is a variable that keeps track of the current phase of the oscillator, and is incremented on each audio sample interval. 
+
+The sync phase increment is the amount by which the phase accumulator is incremented each sample interval, and determines the frequency of the oscillator.
+
+The lookup table is used to convert the phase of the oscillator into a triangular waveform. 
+
+The triangle wave is used to modulate the amplitude of the oscillator, which creates the characteristic shape of the exponential decay envelope.
+
+The clipping step ensures that the output sample remains within the range of values that can be represented by the PWM output. Clipping can introduce distortion into the sound, but is often used in audio processing to prevent overdriving the output.
 
 ## Bill of Materials
 [Arduino Mega 2560 R3](https://www.aliexpress.com/item/1005001621770748.html?spm=a2g0o.productlist.main.3.9df63b32MAAJ7C&algo_pvid=d85cda44-e8ad-4844-9c00-23b1350aadd8&algo_exp_id=d85cda44-e8ad-4844-9c00-23b1350aadd8-1&pdp_ext_f=%7B%22sku_id%22%3A%2212000016846557522%22%7D&pdp_npi=3%40dis%21EUR%2115.23%2112.8%21%21%21%21%21%4021227f7e16782243609872881d071a%2112000016846557522%21sea%21GR%212426965530&curPageLogUid=gQeB4oiq5ITT) x 1
