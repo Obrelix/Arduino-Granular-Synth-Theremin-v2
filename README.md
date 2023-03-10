@@ -31,4 +31,3 @@ You can explore a vast range of sound textures and manipulate them in real-time.
  ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Granular_Synth_Theremin2.png?raw=true)
  ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Granular_Synth_Theremin.png?raw=true)
  ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Granular_Synth_Theremin_Bottom.png?raw=true)
- ![alt text](https://github.com/Obrelix/Arduino-Granular-Synth-Theremin-v2/blob/main/Images/Arduino_Granular_Synth_Theremin_bb.png?raw=true)
